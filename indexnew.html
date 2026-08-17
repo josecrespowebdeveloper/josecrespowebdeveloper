@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1011" />
+  <meta name="generator" content="Standalone single-file website" />
+
+  <!-- Seguridad integrada en este único HTML. Algunas cabeceras HTTP de servidor no pueden imponerse desde un archivo HTML estático. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-i79QomXa0OVWHIROwkB0Ud25HOmaxuuopt8eG0Ze0QE=' 'sha256-OoF93PrM2pibp0iOObrqqAiStSoPu/xUkDahhIpTyKw='; script-src-attr 'none'; style-src 'sha256-WUEYBbWE/JoPVha443EU60ZWTXUlir188fgY/r0vz0I='; style-src-attr 'none'; img-src 'self' data:; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; manifest-src 'none'; worker-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+
+  <!-- SEO técnico -->
+  <title>José Crespo - Web Developer | Diseño y Desarrollo Web Profesional </title>
+  <meta name="description" content="Diseño y desarrollo de páginas web profesionales, landing pages, e-commerce y sitios responsive enfocados en confianza, velocidad y conversión." />
+  <meta name="author" content="José Crespo" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="/" />
+  <link rel="alternate" hreflang="es" href="/" />
+  <link rel="alternate" hreflang="x-default" href="/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="José Crespo Web Developer" />
+  <meta property="og:title" content="Diseño y Desarrollo Web Profesional | José Crespo" />
+  <meta property="og:description" content="Páginas web profesionales, landing pages y e-commerce con diseño responsive, estructura clara y enfoque en conversión." />
+<!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Diseño y Desarrollo Web Profesional | José Crespo" />
+  <meta name="twitter:description" content="Páginas web profesionales, landing pages y e-commerce con diseño responsive y enfoque en conversión." />
+<link rel="icon" type="image/png" href="assets/logo-jose-crespo-web-developer.png" />
+  <link rel="apple-touch-icon" href="assets/logo-jose-crespo-web-developer.png" />
+<!-- Datos estructurados para buscadores -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#jose-crespo",
+        "name": "José Crespo",
+        "jobTitle": "Web Developer",
+        "description": "Diseño y desarrollo de páginas web profesionales, landing pages, e-commerce y sitios responsive orientados a conversión.",
+        "telephone": "+584129836797",
+        "knowsAbout": [
+          "Desarrollo web",
+          "Diseño web",
+          "Landing pages",
+          "E-commerce",
+          "Diseño responsive",
+          "Optimización web"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "#website",
+        "name": "José Crespo Web Developer",
+        "url": "/",
+        "inLanguage": "es",
+        "publisher": { "@id": "#jose-crespo" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "#webpage",
+        "url": "/",
+        "name": "Diseño y Desarrollo Web Profesional | José Crespo",
+        "description": "Diseño y desarrollo de páginas web profesionales, landing pages, e-commerce y sitios responsive enfocados en confianza, velocidad y conversión.",
+        "isPartOf": { "@id": "#website" },
+        "about": { "@id": "#jose-crespo" },
+        "inLanguage": "es"
+      },
+      {
+        "@type": "ItemList",
+        "name": "Portafolio de desarrollo web",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Indese Miami",
+              "url": "https://indesemiami.com/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "My Beauty Innovation",
+              "url": "https://www.mybeautyinnovation.com/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Kexport",
+              "url": "https://kexport.net/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Keka's Travel Agency",
+              "url": "https://kekastravel.com/"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  
+  <style>
+:root {
+  --bg: #0b1011;
+  --bg-soft: #111718;
+  --surface: #161d1e;
+  --surface-2: #1d2526;
+  --text: #eff5f2;
+  --muted: #a9b7b1;
+  --primary: #4edea3;
+  --primary-2: #10b981;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(78, 222, 163, 0.28);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+  --radius: 26px;
+  --container: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 82% 4%, rgba(78, 222, 163, 0.10), transparent 24rem),
+    radial-gradient(circle at 8% 42%, rgba(16, 185, 129, 0.06), transparent 28rem),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: min(calc(100% - 48px), var(--container));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4.3vw, 3.75rem);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--muted);
+}
+
+.lead {
+  max-width: 760px;
+  margin-top: 20px;
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.025));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+  background: rgba(11, 16, 17, 0.78);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.nav-inner {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand img {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: #bcc8c3;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: 180ms ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 800;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #042117;
+  background: linear-gradient(135deg, var(--primary), #70efbc);
+  box-shadow: 0 10px 30px rgba(78, 222, 163, 0.18);
+}
+
+.btn-secondary {
+  color: var(--text);
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(78, 222, 163, 0.46);
+}
+
+.menu-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 150px 0 80px;
+}
+
+.hero-grid {
+  min-height: 720px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.13fr) minmax(380px, 0.87fr);
+  align-items: center;
+  gap: 70px;
+}
+
+.pill {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(78, 222, 163, 0.23);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.028);
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0 8px rgba(78, 222, 163, 0.08);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% { box-shadow: 0 0 0 4px rgba(78, 222, 163, 0.03); }
+}
+
+.gradient-word {
+  color: transparent;
+  background: linear-gradient(100deg, var(--primary), #7df3c5, #45cde2);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero-copy > p {
+  max-width: 770px;
+  margin-top: 28px;
+  font-size: clamp(1.03rem, 1.45vw, 1.2rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 44px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.stat strong {
+  display: block;
+  color: var(--primary);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.1;
+}
+
+.stat span {
+  display: block;
+  color: var(--muted);
+  margin-top: 7px;
+  font-size: 0.84rem;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 82%;
+  aspect-ratio: 1;
+  inset: 8% 2% auto auto;
+  background: rgba(78, 222, 163, 0.14);
+  filter: blur(70px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.logo-panel {
+  position: relative;
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+  padding: 58px;
+  border-radius: 34px;
+  overflow: visible;
+}
+
+.logo-panel::after {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border-radius: 26px;
+  border: 1px solid rgba(78, 222, 163, 0.08);
+  pointer-events: none;
+}
+
+.logo-panel > img {
+  width: min(100%, 390px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 26px;
+  box-shadow: 0 26px 70px rgba(0,0,0,0.28);
+}
+
+.floating-note {
+  position: absolute;
+  left: -32px;
+  right: 42px;
+  bottom: -44px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(20, 27, 28, 0.92);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.38);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.floating-note strong {
+  display: block;
+  margin-bottom: 7px;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.section-head {
+  max-width: 840px;
+  margin-bottom: 44px;
+}
+
+.cards-4,
+.cards-3,
+.portfolio-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.cards-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.cards-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.service-card,
+.process-card,
+.testimonial {
+  position: relative;
+  padding: 30px;
+  border-radius: var(--radius);
+  transition: 220ms ease;
+}
+
+.service-card:hover,
+.process-card:hover,
+.testimonial:hover {
+  transform: translateY(-7px);
+  border-color: rgba(78, 222, 163, 0.24);
+}
+
+.icon-box {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 23px;
+  color: var(--primary);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.03);
+}
+
+.icon-box svg {
+  width: 25px;
+  height: 25px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card p,
+.process-card p {
+  margin-top: 12px;
+  font-size: 0.96rem;
+}
+
+.portfolio-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card {
+  padding: 14px;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: 250ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(78, 222, 163, 0.20);
+}
+
+.project-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 240px;
+  padding: 12px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0e1314;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* IMPORTANT: object-fit: contain prevents the portfolio screenshots from being cropped. */
+.project-image img {
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 12px;
+  transition: transform 350ms ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.015);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 22px;
+  background: linear-gradient(180deg, transparent 54%, rgba(3, 8, 8, 0.76));
+  opacity: 0;
+  transition: opacity 220ms ease;
+  pointer-events: none;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay .btn {
+  min-height: 42px;
+  padding-inline: 18px;
+  pointer-events: auto;
+  transform: translateY(10px);
+  transition: 220ms ease;
+}
+
+.project-card:hover .project-overlay .btn {
+  transform: translateY(0);
+}
+
+.project-copy {
+  padding: 24px 9px 12px;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.tag {
+  flex: 0 0 auto;
+  padding: 7px 11px;
+  color: var(--primary);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.025);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.project-copy p {
+  margin-top: 14px;
+  font-size: 0.95rem;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  border: 1px solid rgba(78, 222, 163, 0.22);
+  border-radius: 15px;
+  color: var(--primary);
+  background: rgba(78, 222, 163, 0.06);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.testimonial::before {
+  content: "“";
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  color: rgba(78, 222, 163, 0.16);
+  font-family: Georgia, serif;
+  font-size: 4.8rem;
+  line-height: 1;
+}
+
+.testimonial > p {
+  position: relative;
+  z-index: 1;
+  min-height: 145px;
+  color: #c3ceca;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+.avatar {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(78, 222, 163, 0.12);
+  color: var(--primary);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.person strong {
+  display: block;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.92rem;
+}
+
+.person span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.cta {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(48px, 7vw, 82px);
+  border-radius: 34px;
+  text-align: center;
+  border-color: rgba(78, 222, 163, 0.18);
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(78, 222, 163, 0.14);
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.cta > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cta h2 {
+  max-width: 890px;
+  margin-inline: auto;
+}
+
+.cta p {
+  max-width: 720px;
+  margin: 22px auto 30px;
+  font-size: 1.05rem;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  background: #080c0d;
+}
+
+.footer-inner {
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.footer-brand img {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  opacity: 0.82;
+}
+
+.footer-copy {
+  color: #7f8c87;
+  font-size: 0.84rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: #9aa8a2;
+  font-size: 0.84rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 900;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.34);
+  transition: 180ms ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.04);
+}
+
+.whatsapp-float svg {
+  width: 31px;
+  height: 31px;
+  fill: currentColor;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Legal pages + cookie consent */
+.legal-link {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #9aa8a2;
+  font: inherit;
+  font-size: 0.84rem;
+  padding: 0;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.legal-link:hover,
+.legal-link:focus-visible {
+  color: var(--primary);
+  outline: none;
+}
+
+.legal-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2100;
+  display: none;
+  place-items: center;
+  padding: 24px;
+  background: rgba(3, 7, 8, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.legal-modal.open {
+  display: grid;
+}
+
+.legal-dialog {
+  width: min(920px, 100%);
+  max-height: min(86vh, 900px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #101617;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 26px;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.56);
+}
+
+.legal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,0.018);
+}
+
+.legal-header h2 {
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  margin-top: 4px;
+}
+
+.legal-date {
+  margin-top: 7px;
+  color: #81908a;
+  font-size: 0.82rem;
+}
+
+.legal-close {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: 180ms ease;
+}
+
+.legal-close:hover,
+.legal-close:focus-visible {
+  color: var(--primary);
+  border-color: var(--line-strong);
+  outline: none;
+}
+
+.legal-body {
+  overflow-y: auto;
+  padding: 28px;
+  scrollbar-width: thin;
+  scrollbar-color: #34433d transparent;
+}
+
+.legal-body h3 {
+  margin: 30px 0 10px;
+  font-size: 1.1rem;
+  letter-spacing: -0.015em;
+}
+
+.legal-body h3:first-child {
+  margin-top: 0;
+}
+
+.legal-body p,
+.legal-body li {
+  color: #b7c3be;
+  font-size: 0.96rem;
+  line-height: 1.78;
+}
+
+.legal-body p + p {
+  margin-top: 12px;
+}
+
+.legal-body ul {
+  margin: 10px 0 0 22px;
+}
+
+.legal-body li + li {
+  margin-top: 7px;
+}
+
+.legal-body a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-note {
+  margin-top: 26px;
+  padding: 16px 18px;
+  border: 1px solid rgba(78, 222, 163, 0.18);
+  border-radius: 16px;
+  background: rgba(78, 222, 163, 0.045);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  z-index: 2000;
+  width: min(920px, calc(100% - 32px));
+  transform: translate(-50%, 24px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 240ms ease, transform 240ms ease;
+  padding: 20px;
+  border: 1px solid rgba(78, 222, 163, 0.22);
+  border-radius: 22px;
+  background: rgba(13, 19, 20, 0.97);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.5);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.cookie-banner.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
+}
+
+.cookie-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.cookie-copy strong {
+  display: block;
+  margin-bottom: 5px;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.cookie-copy p {
+  color: #aebbb5;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.cookie-copy button {
+  border: 0;
+  background: none;
+  color: var(--primary);
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cookie-actions .btn {
+  min-height: 42px;
+  padding: 0 18px;
+  font-size: 0.82rem;
+}
+
+.btn-cookie-muted {
+  color: var(--text);
+  border-color: var(--line);
+  background: rgba(255,255,255,0.025);
+}
+
+@media (max-width: 760px) {
+  .legal-modal {
+    padding: 12px;
+  }
+
+  .legal-dialog {
+    max-height: 92vh;
+    border-radius: 20px;
+  }
+
+  .legal-header,
+  .legal-body {
+    padding: 20px;
+  }
+
+  .cookie-content {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cookie-actions {
+    justify-content: stretch;
+  }
+
+  .cookie-actions .btn {
+    flex: 1 1 160px;
+  }
+}
+
+
+@media (max-width: 1050px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-copy {
+    max-width: 900px;
+  }
+
+  .hero-visual {
+    width: min(100%, 660px);
+    margin: 20px auto 0;
+  }
+
+  .cards-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .floating-note {
+    left: 24px;
+    right: 24px;
+  }
+}
+
+@media (max-width: 840px) {
+  .nav-links {
+    position: fixed;
+    top: 78px;
+    left: 24px;
+    right: 24px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgba(15, 21, 22, 0.98);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .nav-links a:hover {
+    background: rgba(255,255,255,0.035);
+  }
+
+  .nav .nav-cta {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: grid;
+  }
+
+  .cards-3,
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial > p {
+    min-height: 0;
+  }
+
+  .footer-inner {
+    padding: 34px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(calc(100% - 32px), var(--container));
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .hero {
+    padding: 125px 0 56px;
+  }
+
+  .brand span {
+    max-width: 175px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+  }
+
+  .hero-grid {
+    gap: 44px;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .stat {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .logo-panel {
+    min-height: 440px;
+    padding: 34px;
+  }
+
+  .floating-note {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: -24px;
+  }
+
+  .cards-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    min-height: 0;
+    padding: 8px;
+  }
+
+  .project-image img {
+    max-height: none;
+  }
+
+  .project-overlay {
+    display: none;
+  }
+
+  .project-title-row {
+    align-items: center;
+  }
+
+  .service-card,
+  .process-card,
+  .testimonial {
+    padding: 25px;
+  }
+
+  .cta .btn {
+    width: 100%;
+  }
+
+  .whatsapp-float {
+    right: 18px;
+    bottom: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.section-head.centered {
+  text-align: center;
+  margin-inline: auto;
+}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="assets/logo-jose-crespo-web-developer.png" alt="Logo de José Crespo Web Developer" width="500" height="500" decoding="async" />
+        <span>José Crespo Web Developer</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#testimonios">Testimonios</a>
+      </nav>
+
+      <a class="btn btn-primary nav-cta" href="https://wa.me/584129836797?text=Hola%20Jos%C3%A9%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer">
+        WhatsApp
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="pill"><span class="dot"></span>Desarrollo web moderno para negocios que quieren vender más</div>
+
+          <h1>
+            Tu página web debe <span class="gradient-word">verse bien</span>,
+            <span class="gradient-word">cargar rápido</span> y
+            <span class="gradient-word">convertir visitas en clientes.</span>
+          </h1>
+
+          <p>
+            Diseño y desarrollo sitios web profesionales para marcas, tiendas online, agencias, negocios locales y emprendedores que necesitan una presencia digital seria, clara y preparada para crecer.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/584129836797?text=Hola%20Jos%C3%A9%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer">
+              Cotizar por WhatsApp
+            </a>
+            <a class="btn btn-secondary" href="https://wa.me/584129836797?text=Hola%20Jos%C3%A9%2C%20quiero%20hablarte%20sobre%20un%20proyecto%20web." target="_blank" rel="noopener noreferrer">
+              Hablar del proyecto
+            </a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>4+</strong>
+              <span>proyectos destacados</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>enfoque en conversión</span>
+            </div>
+            <div class="stat">
+              <strong>Mobile</strong>
+              <span>diseño adaptable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="logo-panel glass">
+            <img src="assets/logo-jose-crespo-web-developer.png" alt="José Crespo Web Developer" width="500" height="500" decoding="async" fetchpriority="high" />
+          </div>
+          <div class="floating-note">
+            <strong>Webs con imagen premium</strong>
+            <p>Estructura clara, secciones estratégicas, diseño moderno y botones directos a WhatsApp para generar contactos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Servicios</div>
+          <h2>Todo lo que necesita una web para verse profesional y generar confianza.</h2>
+          <p class="lead">No se trata solo de tener una página bonita. La web debe explicar qué haces, mostrar autoridad y llevar al visitante a contactarte sin complicaciones.</p>
+        </div>
+
+        <div class="cards-4">
+          <article class="service-card glass reveal">
+            <div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 9-12h-7l1-8Z" /></svg>
+            </div>
+            <h3>Landing Pages</h3>
+            <p>Páginas directas para campañas, servicios o promociones, diseñadas para captar clientes potenciales.</p>
+          </article>
+
+          <article class="service-card glass reveal">
+            <div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 7H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+            </div>
+            <h3>E-commerce</h3>
+            <p>Tiendas online visuales, organizadas y fáciles de navegar para vender productos de manera profesional.</p>
+          </article>
+
+          <article class="service-card glass reveal">
+            <div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="14" height="11" rx="2"/><path d="M8 20h4M10 15v5M19 8h2v10h-6v-2"/></svg>
+            </div>
+            <h3>Diseño Responsive</h3>
+            <p>Tu sitio se adapta a celular, tablet y computadora, manteniendo una experiencia limpia y moderna.</p>
+          </article>
+
+          <article class="service-card glass reveal">
+            <div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2c4 1 7 4 8 8-2 0-4 .7-5.5 2.2L12 14.7l-2.7-2.7C10.8 10.5 11.5 8.5 11.5 6.5c-4 1-7 4-8 8l4.5 1.5L9.5 20l2.5-2 2.5 2L16 16l4.5-1.5"/></svg>
+            </div>
+            <h3>Optimización</h3>
+            <p>Mejoras de estructura, velocidad, claridad visual y llamadas a la acción para aumentar conversiones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portafolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Portafolio</div>
+          <h2>Proyectos reales con estilos diferentes y objetivos comerciales claros.</h2>
+          <p class="lead">Cada proyecto tiene una identidad distinta: educación, belleza, envíos y turismo. El diseño se adapta al negocio, no al revés.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="project-card glass reveal">
+            <div class="project-image">
+              <img src="assets/indese-miami.png" alt="Diseño y desarrollo web del proyecto Indese Miami" width="1600" height="745" loading="lazy" decoding="async" />
+              <div class="project-overlay">
+                <a class="btn btn-primary" href="https://indesemiami.com/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>Indese Miami</h3>
+                <span class="tag">Academy</span>
+              </div>
+              <p>Sitio institucional con enfoque familiar y educativo. Se trabajó una experiencia visual cálida, accesible y confiable para comunicar programas, admisión, academia y contacto.</p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-image">
+              <img src="assets/my-beauty-innovation.png" alt="Diseño de tienda online My Beauty Innovation" width="1600" height="695" loading="lazy" decoding="async" />
+              <div class="project-overlay">
+                <a class="btn btn-primary" href="https://www.mybeautyinnovation.com/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>My Beauty Innovation</h3>
+                <span class="tag">E-commerce</span>
+              </div>
+              <p>Tienda online para productos de belleza con estética moderna, navegación por categorías y enfoque comercial para destacar promociones, productos y atención al cliente.</p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-image">
+              <img src="assets/kexport.png" alt="Diseño y desarrollo web del proyecto Kexport" width="1600" height="743" loading="lazy" decoding="async" />
+              <div class="project-overlay">
+                <a class="btn btn-primary" href="https://kexport.net/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>Kexport</h3>
+                <span class="tag">Logística</span>
+              </div>
+              <p>Web para empresa de envíos con una identidad visual fuerte, orientada a comunicar cobertura, confianza y servicios de entrega hacia Venezuela de forma directa.</p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-image">
+              <img src="assets/kekas-travel.png" alt="Diseño web del proyecto Keka's Travel Agency" width="1600" height="741" loading="lazy" decoding="async" />
+              <div class="project-overlay">
+                <a class="btn btn-primary" href="https://kekastravel.com/" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>Keka's Travel Agency</h3>
+                <span class="tag">Travel</span>
+              </div>
+              <p>Sitio turístico con una presentación visual aspiracional para paquetes, destinos, cruceros y viajes internacionales, diseñado para inspirar y generar consultas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Proceso</div>
+          <h2>Una forma simple de pasar de idea a página publicada.</h2>
+          <p class="lead">Trabajo con una ruta clara para evitar retrasos, confusiones y diseños que no comunican lo que el negocio realmente necesita.</p>
+        </div>
+
+        <div class="cards-3">
+          <article class="process-card glass reveal">
+            <div class="step-number">01</div>
+            <h3>Diagnóstico</h3>
+            <p>Revisamos tu negocio, tus servicios, tu público y el objetivo principal de la web.</p>
+          </article>
+
+          <article class="process-card glass reveal">
+            <div class="step-number">02</div>
+            <h3>Diseño y estructura</h3>
+            <p>Organizo las secciones, el mensaje, la estética visual y los botones directos a WhatsApp.</p>
+          </article>
+
+          <article class="process-card glass reveal">
+            <div class="step-number">03</div>
+            <h3>Publicación</h3>
+            <p>Dejo la página lista para compartir, recibir visitas y empezar a generar conversaciones con clientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section-head reveal centered">
+          <div class="eyebrow">Testimonios</div>
+          <h2>Lo que dicen los clientes.</h2>
+        </div>
+
+        <div class="cards-3">
+          <article class="testimonial glass reveal">
+            <p>“José transformó nuestra visión en una realidad digital impecable. Su enfoque en la conversión es real; nuestras consultas aumentaron un 40% tras el lanzamiento.”</p>
+            <div class="person">
+              <div class="avatar">L</div>
+              <div><strong>Lolimar Piñango</strong><span>Creaciones Lolamar 13</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial glass reveal">
+            <p>“Excelente profesional. Entendió perfectamente la estética de mi marca y entregó una tienda online rápida, elegante y muy fácil de gestionar.”</p>
+            <div class="person">
+              <div class="avatar">M</div>
+              <div><strong>María G. Rivas</strong><span>Beauty Innovations</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial glass reveal">
+            <p>“La mejor inversión para nuestro negocio. Una web robusta que transmite la confianza que nuestros clientes internacionales necesitan.”</p>
+            <div class="person">
+              <div class="avatar">C</div>
+              <div><strong>Carlos Mendoza</strong><span>Kexport</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta glass reveal">
+          <h2>¿Quieres una web que se vea actual y ayude a vender mejor tu servicio?</h2>
+          <p>Escríbeme por WhatsApp y cuéntame qué tipo de página necesitas: landing, página corporativa, tienda online o rediseño de tu sitio actual.</p>
+          <a class="btn btn-primary" href="https://wa.me/584129836797?text=Hola%20Jos%C3%A9%2C%20quiero%20empezar%20un%20proyecto%20web." target="_blank" rel="noopener noreferrer">Empezar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-jose-crespo-web-developer.png" alt="Logo José Crespo Web Developer" width="500" height="500" loading="lazy" decoding="async" />
+        <span>José Crespo Web Developer</span>
+      </div>
+
+      <p class="footer-copy">© <span id="year"></span> José Crespo. Web Development.</p>
+
+      <div class="footer-links">
+        <button class="legal-link" type="button" data-legal-open="terms">Términos y Condiciones</button>
+        <button class="legal-link" type="button" data-legal-open="privacy">Política de Privacidad</button>
+        <button class="legal-link" type="button" data-legal-open="cookies">Política de Cookies</button>
+        <button class="legal-link" type="button" id="cookieSettings">Gestionar cookies</button>
+        <a href="https://wa.me/584129836797" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Términos y Condiciones -->
+  <div class="legal-modal" id="termsModal" role="dialog" aria-modal="true" aria-labelledby="termsTitle" aria-hidden="true">
+    <div class="legal-dialog">
+      <div class="legal-header">
+        <div>
+          <div class="eyebrow">Información legal</div>
+          <h2 id="termsTitle">Términos y Condiciones</h2>
+          <p class="legal-date">Última actualización: 17 de agosto de 2026</p>
+        </div>
+        <button class="legal-close" type="button" aria-label="Cerrar Términos y Condiciones" data-legal-close>&times;</button>
+      </div>
+      <div class="legal-body">
+        <h3>1. Identificación y alcance</h3>
+        <p>Este sitio web presenta los servicios profesionales de diseño y desarrollo web ofrecidos por José Crespo. Al navegar por este sitio, solicitar información o iniciar una conversación comercial mediante los medios de contacto disponibles, aceptas utilizar el sitio de forma lícita y conforme a estos Términos y Condiciones.</p>
+
+        <h3>2. Información del sitio</h3>
+        <p>La información publicada tiene carácter informativo y comercial. Las descripciones de servicios, ejemplos, tiempos estimados, metodologías y demás contenidos pueden actualizarse para reflejar cambios en la oferta, herramientas utilizadas o forma de trabajo.</p>
+
+        <h3>3. Solicitudes, cotizaciones y contratación</h3>
+        <p>El envío de un mensaje por WhatsApp o cualquier otro canal indicado en este sitio no constituye por sí mismo la contratación de un servicio. El alcance, precio, forma de pago, entregables, número de revisiones, fechas estimadas, responsabilidades de cada parte y cualquier condición adicional se definirán en la cotización, propuesta, factura, orden de trabajo o acuerdo correspondiente.</p>
+        <p>Cuando existan condiciones específicas acordadas por escrito para un proyecto, esas condiciones prevalecerán sobre la información general mostrada en esta web en lo relacionado con dicho proyecto.</p>
+
+        <h3>4. Pagos, anticipos, cambios y cancelaciones</h3>
+        <p>Los importes, anticipos, hitos de pago, políticas de cancelación, reprogramación, reembolsos y cargos por trabajos adicionales se comunicarán antes de iniciar cada servicio y dependerán del alcance contratado. Cualquier solicitud que exceda el alcance originalmente aprobado podrá cotizarse por separado.</p>
+
+        <h3>5. Responsabilidades del cliente</h3>
+        <p>El cliente es responsable de facilitar de manera oportuna los textos, imágenes, logotipos, accesos, datos empresariales, aprobaciones y demás materiales necesarios para el proyecto, así como de garantizar que cuenta con los derechos o autorizaciones necesarias para utilizar el contenido que proporcione.</p>
+        <p>Retrasos en la entrega de materiales, accesos o aprobaciones pueden afectar las fechas inicialmente estimadas.</p>
+
+        <h3>6. Propiedad intelectual</h3>
+        <p>Salvo acuerdo distinto por escrito, el contenido original del sitio, incluyendo estructura, presentación, textos propios, elementos gráficos y código desarrollado específicamente para esta web, está protegido por las normas de propiedad intelectual aplicables. No se autoriza su reproducción, redistribución o explotación comercial no autorizada.</p>
+        <p>La titularidad y entrega de los archivos, diseños o desarrollos realizados para clientes se determinará en las condiciones específicas de cada proyecto. Componentes de terceros, bibliotecas, tipografías, plataformas, plugins y otros recursos externos conservan sus respectivas licencias y condiciones de uso.</p>
+
+        <h3>7. Portafolio</h3>
+        <p>Los proyectos mostrados en la sección de portafolio corresponden a trabajos realizados y se presentan con fines informativos y demostrativos. Las marcas, nombres comerciales, capturas y contenidos pertenecientes a terceros siguen siendo propiedad de sus respectivos titulares.</p>
+
+        <h3>8. Servicios y plataformas de terceros</h3>
+        <p>Algunos proyectos pueden depender de servicios de terceros como hosting, dominios, pasarelas de pago, plataformas de comercio electrónico, APIs, plugins, proveedores de correo, redes sociales u otras herramientas. La disponibilidad, precios, políticas y funcionamiento de esos servicios son responsabilidad de sus respectivos proveedores.</p>
+
+        <h3>9. Enlaces externos</h3>
+        <p>Este sitio puede incluir enlaces a páginas de clientes, WhatsApp u otros servicios externos. Al acceder a ellos, el visitante queda sujeto a las políticas y condiciones del tercero correspondiente. No se controla ni garantiza el contenido, disponibilidad o prácticas de privacidad de sitios externos.</p>
+
+        <h3>10. Disponibilidad y limitación de responsabilidad</h3>
+        <p>Se procura mantener el sitio disponible, actualizado y seguro, pero no se garantiza que funcione de forma ininterrumpida o libre de errores en todo momento. En la medida permitida por la legislación aplicable, no se asume responsabilidad por interrupciones, fallos de servicios de terceros, incompatibilidades, pérdida de datos originada fuera del control razonable del proveedor o decisiones tomadas únicamente con base en información general de esta web.</p>
+
+        <h3>11. Uso permitido</h3>
+        <p>No está permitido intentar vulnerar la seguridad del sitio, introducir código malicioso, realizar accesos no autorizados, copiar sistemáticamente el contenido con fines ilícitos, interferir con su funcionamiento o utilizarlo para actividades contrarias a la ley o a derechos de terceros.</p>
+
+        <h3>12. Modificaciones</h3>
+        <p>Estos Términos y Condiciones pueden actualizarse cuando cambien los servicios, la tecnología utilizada o los requisitos legales aplicables. La fecha de última actualización se mostrará al inicio de este documento.</p>
+
+        <h3>13. Legislación aplicable y resolución de controversias</h3>
+        <p>La relación entre las partes se regirá por la legislación que resulte aplicable según la jurisdicción correspondiente y, cuando exista un contrato o propuesta aceptada, por las condiciones allí acordadas. Antes de iniciar una reclamación formal, se procurará resolver cualquier diferencia mediante comunicación directa y de buena fe.</p>
+
+        <h3>14. Contacto</h3>
+        <p>Para consultas relacionadas con estos términos o con un servicio, puedes contactar a José Crespo mediante <a href="https://wa.me/584129836797" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+
+        <div class="legal-note"><p>Estas condiciones describen el funcionamiento general de esta web. Los términos comerciales concretos de cada proyecto se establecen en su cotización o acuerdo específico.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Política de Privacidad -->
+  <div class="legal-modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle" aria-hidden="true">
+    <div class="legal-dialog">
+      <div class="legal-header">
+        <div>
+          <div class="eyebrow">Privacidad</div>
+          <h2 id="privacyTitle">Política de Privacidad</h2>
+          <p class="legal-date">Última actualización: 17 de agosto de 2026</p>
+        </div>
+        <button class="legal-close" type="button" aria-label="Cerrar Política de Privacidad" data-legal-close>&times;</button>
+      </div>
+      <div class="legal-body">
+        <h3>1. Responsable de la información</h3>
+        <p>Esta web es operada por José Crespo con el propósito de presentar servicios de diseño y desarrollo web y facilitar el contacto con potenciales clientes. Para consultas relacionadas con privacidad puedes utilizar el canal de WhatsApp indicado en este sitio.</p>
+
+        <h3>2. Información que puede recopilarse</h3>
+        <p>Actualmente este sitio no incluye formularios propios de registro, creación de cuentas ni pagos directos. Sin embargo, puede tratarse información cuando:</p>
+        <ul>
+          <li>Contactas voluntariamente por WhatsApp y compartes tu nombre, número telefónico, empresa, necesidades del proyecto u otros datos.</li>
+          <li>El proveedor de hosting registra datos técnicos habituales para entregar y proteger el sitio, como dirección IP, tipo de navegador, dispositivo, fecha, hora, páginas solicitadas y registros de seguridad.</li>
+          <li>El navegador carga recursos de terceros, como tipografías web, o cuando accedes a enlaces externos.</li>
+          <li>Guardamos localmente en tu navegador la elección realizada en el banner de cookies para recordar tu preferencia.</li>
+        </ul>
+
+        <h3>3. Finalidades del tratamiento</h3>
+        <p>La información puede utilizarse para responder consultas, preparar cotizaciones, gestionar proyectos solicitados, mantener comunicaciones relacionadas con un servicio, proteger la seguridad del sitio, prevenir abuso técnico y cumplir obligaciones legales o contractuales cuando correspondan.</p>
+
+        <h3>4. Base para el tratamiento</h3>
+        <p>Según la legislación que resulte aplicable, el tratamiento puede basarse en tu consentimiento, en la necesidad de atender una solicitud previa a una posible contratación, en la ejecución de un acuerdo, en el cumplimiento de obligaciones legales o en intereses legítimos relacionados con seguridad, funcionamiento y administración del sitio.</p>
+
+        <h3>5. WhatsApp y otros servicios externos</h3>
+        <p>Cuando utilizas el botón de WhatsApp, la comunicación se realiza mediante una plataforma de terceros y queda sujeta también a sus propios términos y políticas de privacidad. Del mismo modo, los enlaces hacia proyectos del portafolio u otras páginas externas son administrados por sus respectivos responsables.</p>
+
+        <h3>6. Cookies, almacenamiento local y tecnologías similares</h3>
+        <p>Este sitio utiliza almacenamiento local del navegador para recordar la decisión tomada en el banner de cookies. Por defecto no se instalan mediante el código de esta web cookies publicitarias ni de analítica. Si en el futuro se incorporan herramientas de medición, publicidad o seguimiento, esta política y el mecanismo de consentimiento deberán actualizarse antes de activarlas cuando la legislación aplicable así lo exija.</p>
+
+        <h3>7. Compartición de información</h3>
+        <p>No se vende información personal. Los datos pueden compartirse únicamente cuando sea necesario para prestar el servicio solicitado, operar infraestructura técnica, cumplir una obligación legal, proteger derechos o seguridad, o cuando el usuario lo autorice. Cada proveedor externo puede aplicar sus propias políticas y medidas de seguridad.</p>
+
+        <h3>8. Conservación</h3>
+        <p>La información se conserva únicamente durante el tiempo razonablemente necesario para responder solicitudes, gestionar una relación comercial, atender obligaciones contables o legales, resolver disputas y mantener registros de seguridad. El periodo concreto puede variar según el tipo de información y la naturaleza del servicio.</p>
+
+        <h3>9. Seguridad</h3>
+        <p>Se aplican medidas razonables orientadas a proteger la información frente a acceso, alteración, pérdida o divulgación no autorizada. No obstante, ningún sistema conectado a Internet puede garantizar seguridad absoluta.</p>
+
+        <h3>10. Derechos de privacidad</h3>
+        <p>Dependiendo de tu país o estado de residencia, puedes contar con derechos de acceso, corrección, actualización, eliminación, oposición, limitación, portabilidad o retiro del consentimiento. También pueden existir derechos específicos frente a la venta o compartición de información personal cuando dichas actividades resulten aplicables.</p>
+        <p>Para ejercer un derecho, puedes enviar una solicitud por WhatsApp indicando que se trata de una consulta de privacidad. Podrá solicitarse información razonable para verificar la identidad y evitar accesos no autorizados a datos de terceros.</p>
+
+        <h3>11. Privacidad de menores</h3>
+        <p>Los servicios presentados en esta web están orientados a negocios y profesionales y no están diseñados para recopilar intencionalmente información personal de menores. Si se detecta que se recibió información de un menor sin autorización válida cuando esta sea necesaria, se adoptarán medidas razonables para eliminarla.</p>
+
+        <h3>12. Transferencias y proveedores internacionales</h3>
+        <p>Algunos proveedores tecnológicos pueden procesar información desde otros países. Cuando esto ocurra, el tratamiento estará sujeto a las salvaguardas, contratos y requisitos legales que correspondan al proveedor y a la jurisdicción aplicable.</p>
+
+        <h3>13. Cambios a esta política</h3>
+        <p>Esta Política de Privacidad puede modificarse para reflejar cambios en el sitio, en las herramientas utilizadas o en los requisitos legales. La versión vigente será la publicada aquí con su fecha de actualización.</p>
+
+        <h3>14. Contacto</h3>
+        <p>Para consultas de privacidad o solicitudes relacionadas con tus datos, contacta a José Crespo mediante <a href="https://wa.me/584129836797" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Política de Cookies -->
+  <div class="legal-modal" id="cookiesModal" role="dialog" aria-modal="true" aria-labelledby="cookiesTitle" aria-hidden="true">
+    <div class="legal-dialog">
+      <div class="legal-header">
+        <div>
+          <div class="eyebrow">Preferencias</div>
+          <h2 id="cookiesTitle">Política de Cookies</h2>
+          <p class="legal-date">Última actualización: 17 de agosto de 2026</p>
+        </div>
+        <button class="legal-close" type="button" aria-label="Cerrar Política de Cookies" data-legal-close>&times;</button>
+      </div>
+      <div class="legal-body">
+        <h3>1. Qué son las cookies y tecnologías similares</h3>
+        <p>Las cookies son pequeños archivos o identificadores que un sitio puede almacenar o leer en el navegador para recordar información sobre una visita. Tecnologías como localStorage cumplen funciones parecidas al conservar determinadas preferencias en el dispositivo.</p>
+
+        <h3>2. Qué utiliza actualmente esta web</h3>
+        <p>La versión actual de este sitio utiliza almacenamiento local únicamente para recordar si aceptaste o rechazaste las cookies no esenciales en el banner. Esta preferencia evita mostrar el aviso en cada visita.</p>
+        <p>El código actual de la web no instala por defecto cookies propias de analítica, publicidad, remarketing o seguimiento de comportamiento.</p>
+
+        <h3>3. Cookies estrictamente necesarias</h3>
+        <p>Las tecnologías estrictamente necesarias permiten funciones básicas, seguridad, navegación y conservación de preferencias. Cuando son indispensables para prestar una función solicitada, pueden no requerir consentimiento previo según la legislación aplicable.</p>
+
+        <h3>4. Cookies de analítica</h3>
+        <p>Sirven para comprender cómo se utiliza un sitio, por ejemplo qué páginas reciben más visitas o qué errores aparecen. Actualmente no se han activado herramientas propias de analítica en esta web. Si se incorporan en el futuro, se actualizará esta política y se aplicará el mecanismo de consentimiento que corresponda.</p>
+
+        <h3>5. Cookies de marketing</h3>
+        <p>Se utilizan para publicidad personalizada, medición de campañas o seguimiento entre sitios. Actualmente no se han activado mediante el código de esta web cookies propias de marketing o remarketing.</p>
+
+        <h3>6. Recursos y enlaces de terceros</h3>
+        <p>El sitio puede cargar recursos externos, como tipografías web, y contiene enlaces a WhatsApp y a páginas de terceros. Esos proveedores pueden procesar información técnica bajo sus propias políticas. Al abandonar esta web, la configuración de cookies del sitio externo dependerá de dicho proveedor.</p>
+
+        <h3>7. Cómo gestionar tu elección</h3>
+        <p>Puedes aceptar o rechazar las cookies no esenciales desde el banner. También puedes volver a abrir el panel mediante el enlace “Gestionar cookies” disponible en el pie de página. Adicionalmente, la mayoría de los navegadores permiten eliminar datos de sitios, bloquear cookies o limitar tecnologías de seguimiento desde su configuración de privacidad.</p>
+
+        <h3>8. Duración de la preferencia</h3>
+        <p>La decisión del banner se guarda en el almacenamiento local de tu navegador hasta que elimines los datos del sitio o cambies la preferencia mediante el enlace disponible en el footer.</p>
+
+        <h3>9. Actualizaciones</h3>
+        <p>Si se incorporan nuevas cookies, píxeles, servicios de medición, publicidad u otras tecnologías similares, esta Política de Cookies deberá actualizarse para reflejar las categorías, finalidades y proveedores correspondientes.</p>
+
+        <h3>10. Contacto</h3>
+        <p>Si tienes preguntas sobre el uso de cookies o tecnologías similares en esta web, contacta a José Crespo mediante <a href="https://wa.me/584129836797" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <a class="whatsapp-float" href="https://wa.me/584129836797?text=Hola%20Jos%C3%A9%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+
+
+  <aside class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Preferencias de cookies">
+    <div class="cookie-content">
+      <div class="cookie-copy">
+        <strong>Tu privacidad importa</strong>
+        <p>Usamos almacenamiento esencial para recordar tu elección. Esta web no activa por defecto cookies propias de analítica o publicidad. <button type="button" data-legal-open="cookies">Ver Política de Cookies</button></p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn btn-cookie-muted" type="button" id="rejectCookies">Rechazar no esenciales</button>
+        <button class="btn btn-primary" type="button" id="acceptCookies">Aceptar</button>
+      </div>
+    </div>
+  </aside>
+
+
+  <script>
+'use strict';
+
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.addEventListener('click', (event) => {
+  if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+// Legal modals
+const legalModals = {
+  terms: document.getElementById('termsModal'),
+  privacy: document.getElementById('privacyModal'),
+  cookies: document.getElementById('cookiesModal')
+};
+let lastLegalTrigger = null;
+
+function openLegalModal(name, trigger = null) {
+  const modal = legalModals[name];
+  if (!modal) return;
+  Object.values(legalModals).forEach(item => {
+    item.classList.remove('open');
+    item.setAttribute('aria-hidden', 'true');
+  });
+  lastLegalTrigger = trigger;
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+  const closeButton = modal.querySelector('[data-legal-close]');
+  if (closeButton) closeButton.focus();
+}
+
+function closeLegalModal(modal) {
+  if (!modal) return;
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  if (!Object.values(legalModals).some(item => item.classList.contains('open'))) {
+    document.body.classList.remove('modal-open');
+  }
+  if (lastLegalTrigger && typeof lastLegalTrigger.focus === 'function') {
+    lastLegalTrigger.focus();
+  }
+}
+
+document.querySelectorAll('[data-legal-open]').forEach(trigger => {
+  trigger.addEventListener('click', () => openLegalModal(trigger.dataset.legalOpen, trigger));
+});
+
+document.querySelectorAll('[data-legal-close]').forEach(button => {
+  button.addEventListener('click', () => closeLegalModal(button.closest('.legal-modal')));
+});
+
+Object.values(legalModals).forEach(modal => {
+  modal.addEventListener('click', event => {
+    if (event.target === modal) closeLegalModal(modal);
+  });
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    const openModal = Object.values(legalModals).find(modal => modal.classList.contains('open'));
+    if (openModal) closeLegalModal(openModal);
+  }
+});
+
+// Cookie preference
+const COOKIE_PREFERENCE_KEY = 'jc_cookie_preference_v1';
+const cookieBanner = document.getElementById('cookieBanner');
+const acceptCookies = document.getElementById('acceptCookies');
+const rejectCookies = document.getElementById('rejectCookies');
+const cookieSettings = document.getElementById('cookieSettings');
+
+function getCookiePreference() {
+  try {
+    return localStorage.getItem(COOKIE_PREFERENCE_KEY);
+  } catch (error) {
+    return null;
+  }
+}
+
+function saveCookiePreference(value) {
+  try {
+    localStorage.setItem(COOKIE_PREFERENCE_KEY, value);
+  } catch (error) {
+    // If storage is unavailable, the banner may appear again on a later visit.
+  }
+  cookieBanner.classList.remove('show');
+}
+
+if (!getCookiePreference()) {
+  window.setTimeout(() => cookieBanner.classList.add('show'), 500);
+}
+
+acceptCookies.addEventListener('click', () => saveCookiePreference('accepted'));
+rejectCookies.addEventListener('click', () => saveCookiePreference('rejected'));
+cookieSettings.addEventListener('click', () => cookieBanner.classList.add('show'));
+
+// Defense-in-depth for future external links opened in a new tab.
+document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+  const rel = new Set((link.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
+  rel.add('noopener');
+  rel.add('noreferrer');
+  link.setAttribute('rel', Array.from(rel).join(' '));
+});
+  </script>
+</body>
+</html>
